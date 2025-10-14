@@ -9,13 +9,13 @@ This is a community fork of IdentityServer4 upgraded to .NET 8. For detailed inf
 - Modernized obsolete APIs (RNGCryptoServiceProvider, JsonSerializerOptions)
 - All projects build successfully on .NET 8
 
-# Security Vulnerability Found
-IdentityServer4 contains a known Open Redirect vulnerability (CVE-2024-39694) that we do not intend to address in IdentityServer4. Please see [the security advisory](https://github.com/IdentityServer/IdentityServer4/security/advisories/GHSA-55p7-v223-x366) for more details and consider upgrading to [Duende.IdentityServer](www.duendesoftware.com) to receive updates.
+# About This Fork
 
-# Important update
-This project is not maintained anymore. The original repo was archived when .NET Core 3.1 end of support was reached (13th Dec 2022). All official development is happening in the new [Duende Software](https://github.com/duendesoftware) organization.
+The original IdentityServer4 project was archived in December 2022 when .NET Core 3.1 reached end of support. Official development continues in the commercial [Duende IdentityServer](https://duendesoftware.com/products/identityserver) product.
 
-See [here](https://duendesoftware.com/products/identityserver) for more details.
+This fork maintains IdentityServer4 as an open-source option for projects that need .NET 8 compatibility while staying on the Apache 2.0 license.
+
+**Note:** The original project contains a known Open Redirect vulnerability (CVE-2024-39694). See [the security advisory](https://github.com/IdentityServer/IdentityServer4/security/advisories/GHSA-55p7-v223-x366) for details.
 
 ## About IdentityServer4
 [<img align="right" width="100px" src="https://dotnetfoundation.org/img/logo_big.svg" />](https://dotnetfoundation.org/projects?searchquery=IdentityServer&type=project)
