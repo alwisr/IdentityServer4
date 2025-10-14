@@ -1,8 +1,19 @@
+# .NET 8 Community Fork
+
+This is a community fork of IdentityServer4 upgraded to .NET 8. For detailed information about the upgrade process, see [UPGRADE_NOTES.md](UPGRADE_NOTES.md).
+
+**Key Changes:**
+- Upgraded from .NET Core 3.1 to .NET 8.0
+- Updated to C# 12 with ImplicitUsings enabled
+- Fixed security vulnerabilities in dependencies (Newtonsoft.Json, System.IdentityModel.Tokens.Jwt)
+- Modernized obsolete APIs (RNGCryptoServiceProvider, JsonSerializerOptions)
+- All projects build successfully on .NET 8
+
 # Security Vulnerability Found
 IdentityServer4 contains a known Open Redirect vulnerability (CVE-2024-39694) that we do not intend to address in IdentityServer4. Please see [the security advisory](https://github.com/IdentityServer/IdentityServer4/security/advisories/GHSA-55p7-v223-x366) for more details and consider upgrading to [Duende.IdentityServer](www.duendesoftware.com) to receive updates.
 
 # Important update
-This project is not maintained anymore. This repo will be archived when .NET Core 3.1 end of support is reached (13th Dec 2022). All new development is happening in the new [Duende Software](https://github.com/duendesoftware) organization. 
+This project is not maintained anymore. The original repo was archived when .NET Core 3.1 end of support was reached (13th Dec 2022). All official development is happening in the new [Duende Software](https://github.com/duendesoftware) organization.
 
 See [here](https://duendesoftware.com/products/identityserver) for more details.
 
@@ -21,10 +32,11 @@ Active development happens on the main branch. This always contains the latest v
 
 ## How to build
 
-* [Install](https://www.microsoft.com/net/download/core#/current) the latest .NET Core 3.1 SDK
+* [Install](https://dotnet.microsoft.com/download) the latest .NET 8.0 SDK (version 8.0.414 or higher)
 * Install Git
 * Clone this repo
-* Run `build.ps1` or `build.sh` in the root of the cloned repo
+* Run `dotnet restore` to restore packages
+* Run `dotnet build` to build the solution
 
 ## Documentation
 For project documentation, please visit [readthedocs](https://identityserver4.readthedocs.io).
